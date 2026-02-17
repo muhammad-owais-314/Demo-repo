@@ -157,102 +157,94 @@
     
 
 
-  <section class="py-5">
-    <div class="container">
+<section class="py-5">
+  <div class="container">
 
-      <div class="row g-5 align-items-start">
+    <div class="row g-5 align-items-start">
 
-        <!-- Left Image -->
-        <div class="col-lg-6">
-          <div class="product-img">
-            <img id="productImage" src="bridal image/baratimg1.jpg" alt="Product Image">
+      <!-- Left Image -->
+      <div class="col-lg-6">
+        <div class="product-img">
+          <img id="productImage" src="kids image/kimg1.jpg" alt="Product Image">
+        </div>
+      </div>
+
+      <!-- Right Details -->
+      <div class="col-lg-6">
+
+        <h2 class="product-title" id="productTitle">Kids Party Shirt</h2>
+        <p class="product-code" id="productCode">K-1001 - Default</p>
+
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <div>
+            <p class="info-label">Price</p>
+            <h3 class="product-price" id="productPrice">Rs. 1,200</h3>
           </div>
         </div>
 
-        <!-- Right Details -->
-        <div class="col-lg-6">
+        <hr>
 
-          <h2 class="product-title" id="productTitle">Barat Outfit </h2>
-          <p class="product-code" id="productCode">D-2605-B - Default</p>
+        <!-- Size Section -->
+        <div class="mt-4">
+          <p class="info-label">Size</p>
 
-          <div class="d-flex justify-content-between align-items-center mt-4">
-            <div>
-              <p class="info-label">Price</p>
-              <h3 class="product-price" id="productPrice">Rs. 12,000</h3>
-            </div>
+          <div class="d-flex gap-2 flex-wrap" id="sizeContainer">
+            <button class="size-btn active">S</button>
+            <button class="size-btn">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
           </div>
+        </div>
 
-          <hr>
-
-          <!-- Size Section (In Stock replaced) -->
-          <div class="mt-4">
-            <p class="info-label">Size</p>
-
-            <div class="d-flex gap-2 flex-wrap" id="sizeContainer">
-              <button class="size-btn active">S</button>
-              <button class="size-btn">M</button>
-              <button class="size-btn">L</button>
-              <button class="size-btn">XL</button>
-            </div>
+        <!-- Quantity -->
+        <div class="mt-4">
+          <p class="info-label">Quantity</p>
+          <div class="d-flex align-items-center gap-3">
+            <button class="btn btn-light" id="minusBtn"><strong>-</strong></button>
+            <span id="qtyValue" class="fw-bold fs-5">1</span>
+            <button class="btn btn-light" id="plusBtn"><strong>+</strong></button>
           </div>
+        </div>
 
-          <!-- Quantity -->
-          <div class="mt-4">
-            <p class="info-label">Quantity</p>
-            <div class="d-flex align-items-center gap-3">
-              <button class="btn btn-light" id="minusBtn"><strong>-</strong></button>
-              <span id="qtyValue" class="fw-bold fs-5">1</span>
-              <button class="btn btn-light" id="plusBtn"><strong>+</strong></button>
-            </div>
-          </div>
+        <!-- Buttons -->
+        <div class="mt-4 d-flex gap-3 flex-wrap">
+          <button class="btn-wishlist" id="wishlistBtn">
+            <i class="fa-regular fa-heart"></i> ADD TO WISHLIST
+          </button>
 
-          <!-- Buttons -->
-          <div class="mt-4 d-flex gap-3 flex-wrap">
-            <button class="btn-wishlist" id="wishlistBtn">
-              <i class="fa-regular fa-heart"></i> ADD TO WISHLIST
+          <button class="btn-cart" id="cartBtn">
+            <i class="fa-solid fa-cart-shopping"></i> ADD TO CART
+          </button>
+        </div>
+
+        <!-- Dropdown Style Product Info -->
+        <div class="product-dropdowns mt-5">
+
+          <!-- Description Dropdown -->
+          <div class="dropdown-item-wrapper mb-3">
+            <button class="dropdown-toggle d-flex justify-content-between align-items-center w-100 btn btn-light" type="button">
+              Description 
             </button>
-
-            <button class="btn-cart" id="cartBtn">
-              <i class="fa-solid fa-cart-shopping"></i> ADD TO CART
-            </button>
+            <ol class="dropdown-list mt-2" style="display:none;">
+              <li>Premium quality cotton shirt for kids.</li>
+              <li>Perfect for parties and casual wear.</li>
+              <li>Available in vibrant colors.</li>
+              <li>Comfortable and breathable fabric for all-day wear.</li>
+              <li>Durable stitching ensures long-lasting use.</li>
+            </ol>
           </div>
 
-<!-- Dropdown Style Product Info -->
-<div class="product-dropdowns mt-5">
-
-  <!-- Description Dropdown -->
-  <div class="dropdown-item-wrapper mb-3">
-    <button class="dropdown-toggle d-flex justify-content-between align-items-center w-100 btn btn-light" type="button">
-      Description 
-    </button>
-    <ol class="dropdown-list mt-2" style="display:none;">
-      <li>This is a premium bridal outfit collection.</li>
-       <li>This bridal collection is crafted with premium quality fabric and elegant detailing.</li>
-  <li>Each outfit is designed to give a royal and luxurious wedding look.</li>
-  <li>Heavy embroidery and fine finishing make it perfect for special occasions.</li>
-  <li>The collection includes modern and traditional bridal styles for every bride.</li>
-  <li>Comfortable fitting with graceful design to enhance your beauty on the big day.</li>
-    </ol>
-  </div>
-
-  <!-- Product Care Dropdown -->
-  <div class="dropdown-item-wrapper mb-3">
-    <button class="dropdown-toggle d-flex justify-content-between align-items-center w-100 btn btn-light" type="button">
-      Product Care
-    </button>
-    <ol class="dropdown-list mt-2" style="display:none;">
- <li> Dry clean only to maintain embroidery and fabric quality.</li>
- <li>Store in a breathable garment bag for long-lasting freshness.</li>
- <li>Avoid direct sunlight to prevent color fading.</li>
-  <li>Do not wash with harsh detergents or bleach.</li>
-  <li>Iron on low heat and always use a cloth layer over the embroidery.</li>
-    </ol>
-  </div>
-
-</div>
-
-  </section>
-
+          <!-- Product Care Dropdown -->
+          <div class="dropdown-item-wrapper mb-3">
+            <button class="dropdown-toggle d-flex justify-content-between align-items-center w-100 btn btn-light" type="button">
+              Product Care
+            </button>
+            <ol class="dropdown-list mt-2" style="display:none;">
+              <li>Machine wash cold.</li>
+              <li>Do not bleach.</li>
+              <li>Iron on low heat.</li>
+              <li>Do not tumble dry.</li>
+              <li>Wash with similar
 
 
 

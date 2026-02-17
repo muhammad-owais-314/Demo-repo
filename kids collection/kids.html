@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kids page</title>
+    <link
+      rel="stylesheet"
+      href="../MDB5-STANDARD-UI-KIT-Free-9.3.0/css/mdb.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="kids.css" />
+  </head>
+  <body>
+    <section class="wedding-collection-section">
+      <h1 class="main-heading text-center">Kids Collection</h1>
+      <div class="row g-4" id="cardlist"></div>
+    </section>
+
+    <script src="../MDB5-STANDARD-UI-KIT-Free-9.3.0/js/mdb.umd.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(() => {
+        const kidsCollection = [
+          // Kids Outfit 1-4
+          {
+            title: "Kids Outfit ",
+            category: "Kids",
+            description: "Cute pink tee for kids",
+            
+            newPrice: "1500k",
+            image: "kids image/kimg1.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+          {
+            title: "Kids Outfit ",
+            category: "Kids",
+            description: "Grey graphic tee for kids",
+            
+            newPrice: "1600k",
+            image: "kids image/kimg2.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+          {
+            title: "Kids Outfit ",
+            category: "Kids",
+            description: "Set of 2 tees for boys",
+        
+            newPrice: "1700k",
+            image: "kids image/kimg3.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+          {
+            title: "Kids Outfit ",
+            category: "Kids",
+            description: "Casual grey tee for kids",
+            
+            newPrice: "1800k",
+            image: "kids image/kimg4.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+
+          // Kids Outfit 5-8
+          {
+            title: "Kids Outfit ",
+            category: "Kids",
+            description: "White hoodie for kids",
+         
+            newPrice: "1900k",
+            image: "kids image/kimg5.jpg",
+            link: "product-details.html",
+            badge: "HOT",
+          },
+          {
+            title: "Kids Outfit ",
+            category: "Kids",
+            description: "Grey sweatshirt with star design",
+           
+            newPrice: "2000k",
+            image: "kids image/kimg6.jpg",
+            link: "product-details.html",
+            badge: "HOT",
+          },
+          {
+            title: "Kids Outfit ",
+            category: "Kids",
+            description: "Cute skull graphic tee",
+           
+            newPrice: "2100k",
+            image: "kids image/kimg7.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+          {
+            title: "Kids Outfit ",
+            category: "Kids",
+            description: "Black casual tee for kids",
+            
+            newPrice: "2200k",
+            image: "kids image/kimg8.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+
+          // Kids Outfit 9-12
+          {
+            title: "Kids Outfit ",
+            category: "Kids",
+            description: "Brown onesie for babies",
+            
+            newPrice: "2300k",
+            image: "kids image/kimg9.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "Pink casual shirt for girls",
+            
+            newPrice: "2400k",
+            image: "kids image/kimg10.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "Pink hoodie for girls",
+            
+            newPrice: "2500k",
+            image: "kids image/kimg11.jpg",
+            link: "product-details.html",
+            badge: "HOT",
+          },
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "White hoodie for kids",
+            
+            newPrice: "2600k",
+            image: "kids image/kimg12.jpg",
+            link: "product-details.html",
+            badge: "HOT",
+          },
+
+          // Kids Outfit 13-16
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "White graphic tee",
+          
+            newPrice: "2700k",
+            image: "kids image/kimg13.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "Plain white tee",
+           
+            newPrice: "2800k",
+            image: "kids image/kimg14.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "White tee with pattern",
+            
+            newPrice: "2900k",
+            image: "kids image/kimg15.jpg",
+            link: "product-details.html",
+            badge: "HOT",
+          },
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "Cream casual tee",
+            
+            newPrice: "3000k",
+            image: "kids image/kimg16.jpg",
+            link: "product-details.html",
+            badge: "HOT",
+          },
+
+          // Kids Outfit 17-20
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "White baby onesie",
+            
+            newPrice: "3100k",
+            image: "kids image/kimg17.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "Purple comfy set for kids",
+           
+            newPrice: "3200k",
+            image: "kids image/kimg18.jpg",
+            link: "product-details.html",
+            badge: "NEW",
+          },
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "White & brown tee set",
+           
+            newPrice: "3300k",
+            image: "kids image/kimg19.jpg",
+            link: "product-details.html",
+            badge: "HOT",
+          },
+          {
+            title: "Kids Outfit",
+            category: "Kids",
+            description: "Grey striped sweatshirt",
+            
+            newPrice: "3400k",
+            image: "kids image/kimg20.jpg",
+            link: "product-details.html",
+            badge: "HOT",
+          },
+        ];
+
+        kidsCollection.map((el) => {
+          document.getElementById("cardlist").innerHTML += `
+
+  <div class="col-6 col-md-4 col-lg-3">
+  <div class="product-card">
+    <div class="product-image position-relative">
+
+      <span class="badge-new">  <i class="fa-solid fa-bolt"></i>NEW</span>
+
+  
+      <a href="product-details.html">
+        <img src="${el.image}" alt="${el.title}">
+      </a>
+
+    
+      <a href="product-details.html" class="view-details-btn">
+        View Details  <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="product-content text-center">
+      <h3 class="product-title">${el.category}</h3>
+      <p class="product-description">${el.description}</p>
+     <h4 class="product-price">
+   <i class="fa-solid fa-tag"></i>Price:
+ 
+  <span class="new-price">${el.newPrice}</span>
+</h4>
+
+
+
+    </div>
+  </div>
+</div>
+`;
+        });
+      });
+    </script>
+  </body>
+</html>
