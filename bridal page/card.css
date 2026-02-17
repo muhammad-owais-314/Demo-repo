@@ -12,6 +12,9 @@ body{
   color: var(--text-color);
 }
 
+.wedding-collection-section{
+  padding: 20px 5%;
+}
 
 
 .card {
