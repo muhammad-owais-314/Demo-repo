@@ -24,7 +24,7 @@
   </head>
   <body>
     <section class="wedding-collection-section">
-      <h1 class="main-heading text-center">Wedding Collection</h1>
+      <h1 class="main-heading text-center">Bridal Collection</h1>
       <div class="row g-4" id="cardlist"></div>
     </section>
 
@@ -173,7 +173,7 @@
             newPrice: "14000k",
             image: "bridal image/valimaimg13.jpg",
             link: "product-details.html",
-            badge: "SALE",
+            badge: "Premium",
           },
           {
             title: "Valima Outfit 2",
@@ -183,7 +183,7 @@
             newPrice: "16000k",
             image: "bridal image/valimaimg14.jpg",
             link: "product-details.html",
-            badge: "SALE",
+            badge: "Premium",
           },
           {
             title: "Valima Outfit 3",
@@ -193,7 +193,7 @@
             newPrice: "19000k",
             image: "bridal image/valimaimg15.jpg",
             link: "product-details.html",
-            badge: "SALE",
+            badge: "Premium",
           },
           {
             title: "Valima Outfit 4",
@@ -203,7 +203,7 @@
             newPrice: "22000k",
             image: "bridal image/valimaimg16.jpg",
             link: "product-details.html",
-            badge: "SALE",
+            badge: "Premium",
           },
 
           // Mehendi (4)
@@ -256,15 +256,15 @@
   <div class="product-card">
     <div class="product-image position-relative">
 
-      <span class="badge-new">  <i class="fa-solid fa-bolt"></i>NEW</span>
+      <span class="badge-new">  <i class="fa-solid fa-bolt"></i>${el.badge}</span>
 
   
-      <a href="product-details.html">
+      <a href="productdetail.html">
         <img src="${el.image}" alt="${el.title}">
       </a>
 
     
-      <a href="product-details.html" class="view-details-btn">
+      <a href="productdetail.html" class="view-details-btn">
         View Details  <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 
